@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <title>Hello Flask</title>
 </head>
 
@@ -86,7 +87,8 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website <span id="copyright"></span></div>
+                    <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website <span
+                            id="copyright"></span></div>
                 </div>
             </div>
         </div>
@@ -101,6 +103,7 @@
     <script>
         $("#copyright").text(new Date().getFullYear());
     </script>
+    
 
 
 </body>
